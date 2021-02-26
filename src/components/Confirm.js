@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import AppBar from 'material-ui/AppBar';
-import {List, ListItem} from 'material-ui/List';
+import List from 'material-ui/List'
 import RaisedButton from 'material-ui/RaisedButton';
+import ListItem from "material-ui/List/ListItem";
 
 export class Confirm extends Component {
     continue = e => {
@@ -21,42 +22,42 @@ export class Confirm extends Component {
         return (
             <MuiThemeProvider>
                 <React.Fragment>
-                    <AppBar title="Confirm User Data"/>
+                    <AppBar title="Dados do Documento"/>
                     <List>
                         <ListItem 
-                            primaryText="First Name"
+                            primaryText="Cliente"
                             secondaryText={cliente}
                         />
                         <ListItem 
-                            primaryText="Last Name"
+                            primaryText="Saldo de Horas"
                             secondaryText={saldoHoras}
                         />
                         <ListItem 
-                            primaryText="Email"
+                            primaryText="Data do Documento"
                             secondaryText={data}
                         />
                         <ListItem 
-                            primaryText="Occupation"
+                            primaryText="Número do Documento"
                             secondaryText={numDocumento}
                         />
                         <ListItem 
-                            primaryText="City"
+                            primaryText="Descrição do Documento"
                             secondaryText={descricao}
                         />
                         <ListItem 
-                            primaryText="Bio"
+                            primaryText="Telemanutenção"
                             secondaryText={telemanutencao}
                         />
                         <ListItem 
-                            primaryText="Bio"
+                            primaryText="Insite"
                             secondaryText={insite}
                         /> 
                         <ListItem 
-                            primaryText="Bio"
+                            primaryText="Deslocação"
                             secondaryText={deslocacao}
                         /> 
                         <ListItem 
-                            primaryText="Bio"
+                            primaryText="Total de Horas do Documento"
                             secondaryText={totalHorasDoc}
                         /> 
                     </List>
